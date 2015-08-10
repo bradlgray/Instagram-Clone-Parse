@@ -33,8 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Uncomment this line if you want to enable Crash Reporting
         // ParseCrashReporting.enable()
         //
-        // Uncomment and fill in with your Parse credentials:
-        // Parse.setApplicationId("your_application_id", clientKey: "your_client_key")
+        
+        Parse.setApplicationId("Nw5ha7A7VCFxpS4EfaDb5hd8u2k1iITqaJUhbfRE",
+            clientKey: "RDxAdNB3i2UsdHmQjYILeHMXidiXHcgqgpESzFL2")
         //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
@@ -99,8 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         if error.code == 3010 {
-            println("Push notifications are not supported in the iOS Simulator.")
-        } else {
+                    } else {
             println("application:didFailToRegisterForRemoteNotificationsWithError: %@", error)
         }
     }
